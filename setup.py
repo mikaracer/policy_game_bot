@@ -2,5 +2,5 @@ from setuptools import setup
 from Cython.Build import cythonize
 
 setup(
-    ext_modules = cythonize("perm.pyx")
+    ext_modules = cythonize("calculate.pyx")
 )

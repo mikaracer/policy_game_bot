@@ -51,7 +51,7 @@ def calculate(combination):
         if inflation_score_indicator == 0:
             score = gdp - unemployment_score_indicator + inflation_score
         else: score = gdp - unemployment_score_indicator - inflation_score
-        if debt > 9:
+        if debt > 10:
             debt_score = 0
         else: debt_score = score
         if poll_rating < 0:

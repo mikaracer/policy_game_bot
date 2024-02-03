@@ -2242,7 +2242,7 @@ typedef struct {
   PyObject *__pyx_int_1;
   PyObject *__pyx_int_2;
   PyObject *__pyx_int_5;
-  PyObject *__pyx_int_9;
+  PyObject *__pyx_int_10;
   PyObject *__pyx_int_30;
   PyObject *__pyx_int_neg_1;
   PyObject *__pyx_tuple_;
@@ -2334,7 +2334,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_int_1);
   Py_CLEAR(clear_module_state->__pyx_int_2);
   Py_CLEAR(clear_module_state->__pyx_int_5);
-  Py_CLEAR(clear_module_state->__pyx_int_9);
+  Py_CLEAR(clear_module_state->__pyx_int_10);
   Py_CLEAR(clear_module_state->__pyx_int_30);
   Py_CLEAR(clear_module_state->__pyx_int_neg_1);
   Py_CLEAR(clear_module_state->__pyx_tuple_);
@@ -2404,7 +2404,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_int_1);
   Py_VISIT(traverse_module_state->__pyx_int_2);
   Py_VISIT(traverse_module_state->__pyx_int_5);
-  Py_VISIT(traverse_module_state->__pyx_int_9);
+  Py_VISIT(traverse_module_state->__pyx_int_10);
   Py_VISIT(traverse_module_state->__pyx_int_30);
   Py_VISIT(traverse_module_state->__pyx_int_neg_1);
   Py_VISIT(traverse_module_state->__pyx_tuple_);
@@ -2484,7 +2484,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_int_1 __pyx_mstate_global->__pyx_int_1
 #define __pyx_int_2 __pyx_mstate_global->__pyx_int_2
 #define __pyx_int_5 __pyx_mstate_global->__pyx_int_5
-#define __pyx_int_9 __pyx_mstate_global->__pyx_int_9
+#define __pyx_int_10 __pyx_mstate_global->__pyx_int_10
 #define __pyx_int_30 __pyx_mstate_global->__pyx_int_30
 #define __pyx_int_neg_1 __pyx_mstate_global->__pyx_int_neg_1
 #define __pyx_tuple_ __pyx_mstate_global->__pyx_tuple_
@@ -3556,7 +3556,7 @@ static PyObject *__pyx_pf_9calculate_calculate(CYTHON_UNUSED PyObject *__pyx_sel
  *         if inflation_score_indicator == 0:
  *             score = gdp - unemployment_score_indicator + inflation_score             # <<<<<<<<<<<<<<
  *         else: score = gdp - unemployment_score_indicator - inflation_score
- *         if debt > 9:
+ *         if debt > 10:
  */
             __pyx_t_1 = PyNumber_Subtract(__pyx_v_gdp, __pyx_v_unemployment_score_indicator); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L7_error)
             __Pyx_GOTREF(__pyx_t_1);
@@ -3580,7 +3580,7 @@ static PyObject *__pyx_pf_9calculate_calculate(CYTHON_UNUSED PyObject *__pyx_sel
  *         if inflation_score_indicator == 0:
  *             score = gdp - unemployment_score_indicator + inflation_score
  *         else: score = gdp - unemployment_score_indicator - inflation_score             # <<<<<<<<<<<<<<
- *         if debt > 9:
+ *         if debt > 10:
  *             debt_score = 0
  */
           /*else*/ {
@@ -3597,18 +3597,18 @@ static PyObject *__pyx_pf_9calculate_calculate(CYTHON_UNUSED PyObject *__pyx_sel
           /* "calculate.pyx":54
  *             score = gdp - unemployment_score_indicator + inflation_score
  *         else: score = gdp - unemployment_score_indicator - inflation_score
- *         if debt > 9:             # <<<<<<<<<<<<<<
+ *         if debt > 10:             # <<<<<<<<<<<<<<
  *             debt_score = 0
  *         else: debt_score = score
  */
-          __pyx_t_1 = PyObject_RichCompare(__pyx_v_debt, __pyx_int_9, Py_GT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L7_error)
+          __pyx_t_1 = PyObject_RichCompare(__pyx_v_debt, __pyx_int_10, Py_GT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L7_error)
           __pyx_t_12 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely((__pyx_t_12 < 0))) __PYX_ERR(0, 54, __pyx_L7_error)
           __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
           if (__pyx_t_12) {
 
             /* "calculate.pyx":55
  *         else: score = gdp - unemployment_score_indicator - inflation_score
- *         if debt > 9:
+ *         if debt > 10:
  *             debt_score = 0             # <<<<<<<<<<<<<<
  *         else: debt_score = score
  *         if poll_rating < 0:
@@ -3619,7 +3619,7 @@ static PyObject *__pyx_pf_9calculate_calculate(CYTHON_UNUSED PyObject *__pyx_sel
             /* "calculate.pyx":54
  *             score = gdp - unemployment_score_indicator + inflation_score
  *         else: score = gdp - unemployment_score_indicator - inflation_score
- *         if debt > 9:             # <<<<<<<<<<<<<<
+ *         if debt > 10:             # <<<<<<<<<<<<<<
  *             debt_score = 0
  *         else: debt_score = score
  */
@@ -3627,7 +3627,7 @@ static PyObject *__pyx_pf_9calculate_calculate(CYTHON_UNUSED PyObject *__pyx_sel
           }
 
           /* "calculate.pyx":56
- *         if debt > 9:
+ *         if debt > 10:
  *             debt_score = 0
  *         else: debt_score = score             # <<<<<<<<<<<<<<
  *         if poll_rating < 0:
@@ -3950,7 +3950,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitConstants(void) {
   __pyx_int_1 = PyInt_FromLong(1); if (unlikely(!__pyx_int_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_2 = PyInt_FromLong(2); if (unlikely(!__pyx_int_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_5 = PyInt_FromLong(5); if (unlikely(!__pyx_int_5)) __PYX_ERR(0, 1, __pyx_L1_error)
-  __pyx_int_9 = PyInt_FromLong(9); if (unlikely(!__pyx_int_9)) __PYX_ERR(0, 1, __pyx_L1_error)
+  __pyx_int_10 = PyInt_FromLong(10); if (unlikely(!__pyx_int_10)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_30 = PyInt_FromLong(30); if (unlikely(!__pyx_int_30)) __PYX_ERR(0, 1, __pyx_L1_error)
   __pyx_int_neg_1 = PyInt_FromLong(-1); if (unlikely(!__pyx_int_neg_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   return 0;

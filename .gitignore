@@ -86,4 +86,6 @@ fabric.properties
 out
 gen
 /.idea
-G:\ECO\pythonProject\.idea
+G:\ECO\pythonProject\.idea!/calculate.pyx
+!/perm.pyx
+!/setup.py
